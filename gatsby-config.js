@@ -1,12 +1,10 @@
 module.exports = {
   siteMetadata: {
-    title: `TailwindPlay`,
-    description: `GatsbyJS Starter styled with Tailwind CSS`,
-    author: `@Sm0keDev`,
-    github: `https://github.com/app-generator/gatsbyjs-starter-tailwindplay`,
-    blog: `https://blog.appseed.us/tag/gatsbyjs`,
-    product: `https://appseed.us/apps/gatsbyjs`,
-    docs: `https://docs.appseed.us/apps/gatsbyjs`
+    title: `Ayoloka`,
+    description: `Ayoloka - Jagonya Bikin Event`,
+    author: `@ayoloka.com`,    
+    blog: `https://blog.ayoloka.com`,
+    docs: `https://docs.ayoloka.com`
 
   },
   plugins: [
@@ -20,7 +18,7 @@ module.exports = {
         background_color: `#ffffff`,
         theme_color: `#4dc0b5`,
         display: `minimal-ui`,
-        icon: `src/images/tailwind-icon.png`
+        icon: `src/images/ayolokawhite.png`
       }
     },
     `gatsby-plugin-postcss`,

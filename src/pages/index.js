@@ -9,8 +9,8 @@ function IndexPage() {
     <Layout>
     
       <SEO
-        title="GatsbyJS Tailwind Starter"
-        keywords={[`gatsby`, `tailwind`, `react`, `tailwindcss`]}
+        title="Ayoloka - Jagoan Eventmu"
+        keywords={[`event surabaya`, `event platform`, `loket.com`, `ayoloka`,`eventbrite`,`buat event gratis`]}
       />
 
     </Layout>
