@@ -1,3 +1,6 @@
+html{
+    scroll-behavior: smooth
+}
 
 .gradient {
     background: linear-gradient(90deg, #1AAC09 0%, #008080 100%);

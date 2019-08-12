@@ -36,9 +36,9 @@ function Layout({ children }) {
               <div className="w-full container mx-auto flex flex-wrap items-center justify-between mt-0 py-2">
                   
                 <div className="pl-4 flex items-center">
-                  <a className="toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl text-gray-800"  href="#"> 
+                  <Link to={`#`} className="toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl text-gray-800"> 
                     <img className="ayolokahead" alt="img_ayolokahead" src={ayolokahead}/>
-                  </a>
+                  </Link>
                 </div>
 
                 <div className="block lg:hidden pr-4">
@@ -51,16 +51,16 @@ function Layout({ children }) {
                 <div className={`${ isExpanded ? `block` : `hidden` } w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20 `}>
                   <ul className="list-reset lg:flex justify-end flex-1 items-center">
                     <li className="mr-3">
-                      <a className="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Home</a>
+                      <Link to={`/`} className="inline-block py-2 px-4 text-black font-bold no-underline" >Home</Link>
                     </li>
                     <li className="mr-3">
-                      <a className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Product</a>
+                      <Link to={`#features`} className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4">Features</Link>
                     </li>
                     <li className="mr-3">
-                      <a className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Payment</a>
+                      <Link to={`#payment`} className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4">Payment</Link>
                     </li>
                     <li className="mr-3">
-                      <a className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4" href="#">Features</a>
+                      <Link to={`#subscribe`} className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4">Subscribe</Link>
                     </li>
                   </ul>
                   <form action={data.site.siteMetadata.github}>
@@ -119,9 +119,9 @@ function Layout({ children }) {
             </div>
 
             {/* Alternate features */}
-            <section className="bg-white border-b py-8">
+            <section id="features" className="bg-white border-b py-8">
               <div className="container max-w-5xl mx-auto m-8">
-                <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">{data.site.siteMetadata.title}</h2>
+                <h2 className="w-full my-2 text-5xl font-bold leading-tight text-center text-gray-800">Features</h2>
                 <div className="w-full mb-4">	
                   <div className="h-1 mx-auto gradient w-64 opacity-25 my-0 py-0 rounded-t"></div>
                 </div>
@@ -129,9 +129,8 @@ function Layout({ children }) {
                 <div className="flex flex-wrap">
                   <div className="w-5/6 sm:w-1/2 p-6">
                     <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Cari Workshop Dalam Sekejap</h3>
-                    <p className="text-gray-600 mb-8">Temukan workshops dengan mencari atau memakai filter berdasar lokasi, kategori, instruktur, dan lain-lain.<br/><br/>
+                    <p className="text-gray-600 mb-8">Temukan workshops dengan mencari atau memakai filter berdasar lokasi, kategori, instruktur, dan lain-lain.<br/><br/></p>
                     
-                    Images from: <a className="text-orange-500" href="#">ayoloka.com</a></p>
                     
                   </div>
                   <div className="w-full sm:w-1/2 p-6">
@@ -233,7 +232,7 @@ function Layout({ children }) {
                     <div className="align-middle">
                       <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Baca Detailnya</h3>
                       <p className="text-gray-600 mb-8">Hubungi instruktur, pilih tanggal, beli dari beberapa pilihan tiket, dan sebagainya.<br /><br/>
-                      Images from: <a className="text-orange-500" href="#">ayoloka.com</a></p>
+                      </p>
                     </div>
                   </div>
 
@@ -242,7 +241,7 @@ function Layout({ children }) {
             </section>
 
             {/* Title cards */}
-            <section className="bg-white border-b py-8">
+            <section id="payment" className="bg-white border-b py-8">
               
               <div className="container mx-auto flex flex-wrap pt-4 pb-12">
               
@@ -402,7 +401,7 @@ function Layout({ children }) {
             </svg>
 
             {/* CTA block */}
-            <section className="container mx-auto text-center py-6 mb-12">
+            <section id="subscribe" className="container mx-auto text-center py-6 mb-12">
 
               <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-white">Call to Action</h1>
               <div className="w-full mb-4">	
