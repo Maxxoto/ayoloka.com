@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 
 import heroImg from "../images/hero.png";
-import ayolokahead from "../images/ayoloka_white_prog.jpg";
+import ayolokahead from "../images/ayoloka_white_pro.jpg";
 import payment1 from "../images/payment1_prog.jpg";
 import payment2 from "../images/payment2_prog.jpg";
 import payment3 from "../images/payment3_prog.jpg";
