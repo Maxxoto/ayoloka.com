@@ -4,7 +4,8 @@ module.exports = {
     description: `Ayoloka - Jagonya Bikin Event`,
     author: `@ayoloka.com`,    
     blog: `https://blog.ayoloka.com`,
-    docs: `https://docs.ayoloka.com`
+    docs: `https://docs.ayoloka.com`,
+    github: `https://github.com/Maxxoto/ayoloka.com`
 
   },
   plugins: [
