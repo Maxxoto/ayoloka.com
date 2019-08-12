@@ -32,7 +32,7 @@ module.exports = {
     },
     `gatsby-plugin-offline`,
     {
-      options = {
+      options: {
         importWorkboxFrom: `local`,
         globDirectory: rootDir,
         globPatterns,
