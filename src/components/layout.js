@@ -1,7 +1,9 @@
-import React from "react";
+import React, { useState } from "react";
+import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 
+import Header from "./header";
 import heroImg from "../images/hero.png";
 import ayolokahead from "../images/ayoloka_white_prog.jpg";
 import payment1 from "../images/payment1_prog.jpg";
@@ -9,6 +11,7 @@ import payment2 from "../images/payment2_prog.jpg";
 import payment3 from "../images/payment3_prog.jpg";
 
 function Layout({ children }) {
+  const [isExpanded, toggleExpansion] = useState(false);
   return (
     <StaticQuery
       query={graphql`
@@ -22,9 +25,9 @@ function Layout({ children }) {
           }
         }
       `}
-      render={data => (
-        <body className="leading-normal tracking-normal text-white gradient">
+      render={data => (    
 
+        <body className="leading-normal tracking-normal text-white gradient">
             {children}
 
             {/* Navigation */}
@@ -39,13 +42,13 @@ function Layout({ children }) {
                 </div>
 
                 <div className="block lg:hidden pr-4">
-                  <button id="nav-toggle" 
+                  <button onClick={() => toggleExpansion(!isExpanded)} 
                           className="w-full flex-grow lg:flex lg:items-center lg:w-auto lg:block mt-2 lg:mt-0 lg:bg-transparent text-black p-4 lg:p-0 z-20 bg-white">
                     <svg className="fill-current h-3 w-3" viewBox="0 0 20 20" xmlns="http://www.w3.org/2000/svg"><title>Menu</title><path d="M0 3h20v2H0V3zm0 6h20v2H0V9zm0 6h20v2H0v-2z"/></svg>
                   </button>
                 </div>
 
-                <div className="w-full flex-grow lg:flex lg:items-center lg:w-auto hidden lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20" id="nav-content">
+                <div className={`${ isExpanded ? `block` : `hidden` } w-full block flex-grow lg:flex lg:items-center lg:w-auto lg:block mt-2 lg:mt-0 bg-white lg:bg-transparent text-black p-4 lg:p-0 z-20 `}>
                   <ul className="list-reset lg:flex justify-end flex-1 items-center">
                     <li className="mr-3">
                       <a className="inline-block py-2 px-4 text-black font-bold no-underline" href="#">Home</a>
@@ -100,7 +103,7 @@ function Layout({ children }) {
             </div>
 
             {/* Waves SVG */}
-            <div class="relative -mt-12 lg:-mt-24">
+            <div className="relative -mt-12 lg:-mt-24">
               <svg viewBox="0 0 1428 174" version="1.1" xmlns="http://www.w3.org/2000/svg">
               <g stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
               <g transform="translate(-2.000000, 44.000000)" fill="#FFFFFF" fill-rule="nonzero">
