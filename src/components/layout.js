@@ -3,7 +3,10 @@ import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
 
 import heroImg from "../images/hero.png";
-import ayolokahead from "../images/ayoloka_white.jpeg";
+import ayolokahead from "../images/ayoloka_white_prog.jpg";
+import payment1 from "../images/payment1_prog.jpg";
+import payment2 from "../images/payment2_prog.jpg";
+import payment3 from "../images/payment3_prog.jpg";
 
 function Layout({ children }) {
   return (
@@ -31,7 +34,7 @@ function Layout({ children }) {
                   
                 <div className="pl-4 flex items-center">
                   <a className="toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl text-gray-800"  href="#"> 
-                    <img className="ayolokahead" src={ayolokahead}/>
+                    <img className="ayolokahead" alt="img_ayolokahead" src={ayolokahead}/>
                   </a>
                 </div>
 
@@ -89,7 +92,7 @@ function Layout({ children }) {
                 </div>
 
                 <div className="w-full md:w-3/5 py-6 text-center">
-                  <img className="w-full md:w-4/5 z-50" src={heroImg} />
+                  <img className="w-full md:w-4/5 z-50" alt="img-hero" src={heroImg} />
                 </div>
                 
               </div>
@@ -253,7 +256,7 @@ function Layout({ children }) {
                     <a href="https://tailwindcss.com/" className="flex flex-wrap no-underline hover:no-underline">
                     {/* Todo  Logo */}
                     
-                      <img className="payment text-base px-6 w-full" src="https://asset.kompas.com/crop/0x0:780x390/780x390/data/photo/2017/01/11/1631493logo-black780x390.jpg"/>
+                      <img className="payment text-base px-6 w-full" alt="img-payment" src={payment1}/>
                     
                       <div className="w-full font-bold text-xl text-gray-800 px-6">GoPay</div>
                       <p className="text-gray-800 text-base px-6 mb-5">
@@ -271,7 +274,7 @@ function Layout({ children }) {
                 <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
                   <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
                     <a href="https://tailwindcss.com/" className="flex flex-wrap no-underline hover:no-underline">
-                    <img className="payment text-base px-6 w-full" src="https://preciousanita.com/wp-content/uploads/2018/03/logo-bank.png"/>
+                    <img className="payment text-base px-6 w-full" alt="img-payment" src={payment2}/>
                       <div className="w-full font-bold text-xl text-gray-800 px-6">Bank Transfer</div>
                       <p className="text-gray-800 text-base px-6 mb-5">
                         Metode paling konvensional jika anda tidak mempunyai dompet digital
@@ -288,7 +291,7 @@ function Layout({ children }) {
                 <div className="w-full md:w-1/3 p-6 flex flex-col flex-grow flex-shrink">
                   <div className="flex-1 bg-white rounded-t rounded-b-none overflow-hidden shadow">
                     <a href="https://tailwindcss.com/" className="flex flex-wrap no-underline hover:no-underline">
-                    <img className="payment text-base px-6 w-full" src="https://i.ytimg.com/vi/i09C02151PI/maxresdefault.jpg"/>
+                    <img className="payment text-base px-6 w-full" alt="img-payment" src={payment3}/>
                       <div className="w-full font-bold text-xl text-gray-800 px-6">Kredit Card</div>
                       <p className="text-gray-800 text-base px-6 mb-5">
                         Untuk anda jika merasa kesulitan menggunakan transfer , metode ini salah satu metode termudah .
@@ -421,7 +424,7 @@ function Layout({ children }) {
                   <div className="flex-1 mb-6">
                   
                     <a className="text-orange-600 no-underline hover:no-underline font-bold text-2xl lg:text-4xl"  href="#"> 
-                      <img className="ayolokahead" src={ayolokahead}/>
+                      <img className="ayolokahead" alt="img-ayolokahead" src={ayolokahead}/>
                     </a>
                   </div>
                 
