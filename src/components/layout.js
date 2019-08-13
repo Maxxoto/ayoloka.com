@@ -79,14 +79,14 @@ function Layout({ children }) {
                   {/* <p className="uppercase tracking-loose w-full"></p> */}
                   <h1 className="my-4 text-5xl font-bold leading-tight">Buat Event Gratis</h1>
                   <p className="leading-normal text-2xl mb-8">
-                    {data.site.siteMetadata.title} - adalah startup yang menyediakan marketplace digital untuk workshop,kursus dan seminar. Platform ini menghubungkan instructors dan students. 
-                       
-                    
+                    {data.site.siteMetadata.title} - adalah startup yang menyediakan marketplace digital untuk workshop,kursus dan seminar. Platform ini menghubungkan instructors dan students.                     
                   </p>
 
-                  
-                    <Link to={`#subscribe`} className="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg ">Cari Tahu Lagi</Link>
-                  
+                  <form className="w-full"name="subscribe" method="post" data-netlify="true">
+                    <input className="sm:w-auto lg:w-8/12 bg-white placeholder-gray-500 text-black rounded-full focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg lg:mx-0 py-4 px-8 mr-1 appearance-none leading-normal" type="email" placeholder="Masukkan email"/> 
+                    &nbsp;
+                    <button type="submit" className="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Cari Tahu</button>
+                  </form>                  
 
                 </div>
 
@@ -125,7 +125,7 @@ function Layout({ children }) {
                 <div className="flex flex-wrap">
                   <div className="w-5/6 sm:w-1/2 p-6">
                     <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Cari Workshop Dalam Sekejap</h3>
-                    <p className="text-gray-600 mb-8">Temukan workshops dengan mencari atau memakai filter berdasar lokasi, kategori, instruktur, dan lain-lain.<br/><br/></p>
+                    <p className="text-gray-600 mb-8">Temukan workshops dengan mencari berdasarkan keyword atau memakai filter berdasar lokasi, kategori, instruktur, dan lain-lain.<br/><br/></p>
                     
                     
                   </div>
@@ -144,7 +144,7 @@ function Layout({ children }) {
                   <div className="w-full sm:w-1/2 p-6 mt-6">
                     <div className="align-middle">
                       <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Baca Detailnya</h3>
-                        <p className="text-gray-600 mb-8">Hubungi instruktur, pilih tanggal, beli dari beberapa pilihan tiket, dan sebagainya.<br /><br/>
+                        <p className="text-gray-600 mb-8">Hubungi instruktur, pilih tanggal, beli dari beberapa pilihan tiket, dan sebagainya.Tidak perlu menunggu lama untuk mencari tahu kelas penuh atau tidak.<br /><br/>
                         </p>
                     </div>
                   </div>
@@ -153,7 +153,7 @@ function Layout({ children }) {
                 <div className="flex flex-wrap">
                   <div className="w-5/6 sm:w-1/2 p-6">
                     <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Bayar Online</h3>
-                    <p className="text-gray-600 mb-8">Pilih metode pembayaran secara online dan dapatkan poin untuk pembelian selanjutnya.<br/><br/></p>
+                    <p className="text-gray-600 mb-8">Pilih metode pembayaran secara online dan dapatkan poin untuk pembelian selanjutnya.Kami menerima Go Pay, Credit Card, Bank Transfer, dll<br/><br/></p>
                     
                     
                   </div>
@@ -163,7 +163,7 @@ function Layout({ children }) {
                   </div>
                 </div>
 
-                <div className="flex flex-wrap flex-col-reverse sm:flex-row">	
+                <div className="flex flex-wrap flex-col sm:flex-row">	
                   <div className="w-full sm:w-1/2 p-6 mt-6">
                     <img src={website_prog3}/>
                   </div>
@@ -171,27 +171,11 @@ function Layout({ children }) {
                   <div className="w-full sm:w-1/2 p-6 mt-6">
                     <div className="align-middle">
                       <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Kasih Masukan</h3>
-                        <p className="text-gray-600 mb-8">Beri masukan kepada instruktur secara pribadi, dan berikan rating/review untuk siswa lain.<br/><br/>
+                        <p className="text-gray-600 mb-8">Beri masukan kepada instruktur secara pribadi, dan berikan rating/review untuk siswa lain dan berikan rating untuk membantu siswa lain dalam mengambil keputusan. <br/><br/>
                         </p>
                     </div>
                   </div>
                 </div>
-
-                <div className="flex flex-wrap">
-                  <div className="w-5/6 sm:w-1/2 p-6">
-                    <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Lorem Ipsum Dolor</h3>
-                    <p className="text-gray-600 mb-8">Vue Sabitas grue lorem dolor sir amet . Weri void berhg lampyo<br/><br/></p>
-                    
-                    
-                  </div>
-                  <div className="w-full sm:w-1/2 p-6">
-                    <img src={website_prog4}/>
-
-                  </div>
-                </div>
-
-                
-
                 
               </div>
             </section>
@@ -219,23 +203,7 @@ function Layout({ children }) {
             </svg>
 
             {/* CTA block */}
-            <section id="subscribe" className="container mx-auto text-center py-6 mb-12">
-
-              <h1 className="w-full my-2 text-5xl font-bold leading-tight text-center text-white ">Waitlist</h1>
-              <div className="w-full mb-4">	
-                <div className="h-1 mx-auto bg-white w-1/6 opacity-25 my-0 py-0 rounded-t"></div>
-              </div>
-
-              
-
-              <form name="subscribe" method="post" data-netlify="true">
-              <input className="sm:w-auto lg:w-6/12 bg-white text-black rounded-full focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg lg:mx-0 py-4 px-8 mr-1 appearance-none leading-normal" type="email" placeholder="your email@example.com"/> 
-              &nbsp;
-                <button type="submit" className="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Subscribe</button>
-              </form>
-
-            </section>
-
+          
             {/* Footer */}
             <footer className="bg-white">
               <div className="container mx-auto content-center text-center">
