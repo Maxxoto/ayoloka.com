@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
-import AOS from 'aos';
+// import AOS from 'aos';
 
 import heroImg from "../images/hero.png";
 // import ayolokahead from "../images/ayoloka_white_prog.jpg";
@@ -14,10 +14,24 @@ import website_prog3 from "../images/website 3_prog.jpg";
 import website_prog4 from "../images/website 4_prog.jpg";
 import website_prog5 from "../images/website 5_prog.jpg";
 
-AOS.init();
+class Index extends React.Component{
+  componentDidMount() {
+    const isBrowser = typeof window !== "undefined";
+    const AOS = isBrowser ? require("aos") : undefined;
 
+    this.aos = AOS;
+    this.aos.init();
+}
+
+componentDidUpdate() {
+    this.aos.refresh();
+}
+
+}
 function Layout({ children }) {
   const [isExpanded, toggleExpansion] = useState(false);
+  
+  
   return (
     <StaticQuery
       query={graphql`
@@ -276,7 +290,6 @@ function Layout({ children }) {
     />
   );
 }
-
 Layout.propTypes = {
   children: PropTypes.node.isRequired
 };

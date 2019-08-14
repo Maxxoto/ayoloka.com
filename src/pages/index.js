@@ -1,5 +1,5 @@
 import React from "react";
-// import Helmet from "react-helmet";
+import Helmet from "react-helmet";
 // import { withPrefix, Link } from "gatsby";
 // import { withPrefix } from 'gatsby';
 
@@ -11,6 +11,9 @@ function IndexPage() {
   return (
     
     <Layout>
+      <Helmet>
+        <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"/>
+      </Helmet>
       
       <SEO
         title="Ayoloka - Jagoan Eventmu"
