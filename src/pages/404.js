@@ -1,12 +1,12 @@
 import React from "react";
 
-import Layout from "../components/layout";
+import Header from "../components/header";
 import SEO from "../components/seo";
 import abductionIllustration from "../images/abduction-illustration.svg";
 
 function NotFoundPage() {
   return (
-    <Layout>
+    <Header>
       <SEO title="404: Not found" />
       <div>
         <img
@@ -18,7 +18,7 @@ function NotFoundPage() {
           Looks like this page is a ghost that got abducted by aliens...
         </h2>
       </div>
-    </Layout>
+    </Header>
   );
 }
 
