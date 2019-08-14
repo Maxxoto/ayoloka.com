@@ -1,6 +1,7 @@
 module.exports = {
   siteMetadata: {
     title: `Ayoloka`,
+    siteUrl: `https://www.ayoloka.com`,
     description: `Ayoloka - Jagonya Bikin Event`,
     author: `@ayoloka.com`,    
     blog: `https://blog.ayoloka.com`,
@@ -30,6 +31,16 @@ module.exports = {
         purgeOnly: ["src/css/style.css", "src/css/global.css"]
       }
     },
-    `gatsby-plugin-offline`
+    `gatsby-plugin-offline`,
+    {
+      resolve: 'gatsby-plugin-robots-txt',
+      options: {
+        host: 'https://www.ayoloka.com',
+        sitemap: 'https://www.ayoloka.com/sitemap.xml',
+        policy: [{ userAgent: '*', allow: '/' }]
+      }
+    },
+    `gatsby-plugin-sitemap`,
+
   ]
 };

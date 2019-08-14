@@ -77,7 +77,7 @@ function Layout({ children }) {
 
                 <div className="flex flex-col w-full md:w-2/5 justify-center lg:items-start sm:items-center text-center md:text-left">
                   {/* <p className="uppercase tracking-loose w-full"></p> */}
-                  <h1 className="my-4 text-5xl font-bold leading-tight">Buat Event Gratis</h1>
+                  <h1 className="md:antialiased my-4 text-4xl font-bold leading-tight">Buat Event Gratis</h1>
                   <p className="leading-normal text-2xl mb-8">
                     {data.site.siteMetadata.title} - adalah startup yang menyediakan marketplace digital untuk workshop,kursus dan seminar. Platform ini menghubungkan instructors dan students.                     
                   </p>
@@ -85,7 +85,7 @@ function Layout({ children }) {
                   <form className="w-full"name="subscribe" method="post" data-netlify="true">
                     <input className="sm:w-auto lg:w-8/12 bg-white placeholder-gray-500 text-black rounded-full focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg lg:mx-0 py-4 px-8 mr-1 appearance-none leading-normal" type="email" placeholder="Masukkan email"/> 
                     &nbsp;
-                    <button type="submit" className="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Cari Tahu</button>
+                      <button type="submit" className="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Cari Tahu</button>
                   </form>                  
 
                 </div>
@@ -163,7 +163,7 @@ function Layout({ children }) {
                   </div>
                 </div>
 
-                <div className="flex flex-wrap flex-col sm:flex-row">	
+                <div className="flex flex-wrap flex-col-reverse sm:flex-row">	
                   <div className="w-full sm:w-1/2 p-6 mt-6">
                     <img src={website_prog3}/>
                   </div>
