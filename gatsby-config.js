@@ -28,10 +28,9 @@ module.exports = {
       resolve: "gatsby-plugin-purgecss",
       options: {
         tailwind: true,
-        purgeOnly: ["src/css/style.css", "src/css/global.css"]
+        purgeOnly: ["src/css/style.css", "src/css/global.css","src/css/aos.css"]
       }
     },
-    `gatsby-plugin-offline`,
     {
       resolve: 'gatsby-plugin-robots-txt',
       options: {
@@ -41,6 +40,6 @@ module.exports = {
       }
     },
     `gatsby-plugin-sitemap`,
-
+    `gatsby-plugin-offline`,
   ]
 };

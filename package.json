@@ -4,6 +4,7 @@
   "version": "3.0.25",
   "author": "Taylor Bryant <taylor@bryant.io>",
   "dependencies": {
+    "aos": "^2.3.4",
     "ftp-deploy": "^2.3.3",
     "gatsby": "2.10.4",
     "gatsby-plugin-manifest": "2.2.0",

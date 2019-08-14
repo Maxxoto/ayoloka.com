@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { Link } from "gatsby";
 import PropTypes from "prop-types";
 import { StaticQuery, graphql } from "gatsby";
+import AOS from 'aos';
 
 import heroImg from "../images/hero.png";
 // import ayolokahead from "../images/ayoloka_white_prog.jpg";
@@ -12,6 +13,8 @@ import website_prog2 from "../images/website 2_prog.jpg";
 import website_prog3 from "../images/website 3_prog.jpg";
 import website_prog4 from "../images/website 4_prog.jpg";
 import website_prog5 from "../images/website 5_prog.jpg";
+
+AOS.init();
 
 function Layout({ children }) {
   const [isExpanded, toggleExpansion] = useState(false);
@@ -56,11 +59,11 @@ function Layout({ children }) {
                     <li className="mr-3">
                       <Link to={`/`} className="inline-block py-2 px-4 text-black font-bold no-underline" >Home</Link>
                     </li>
-                    <li className="mr-3">
-                      <Link to={`/#features`} className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4">Features</Link>
+                    <li className="mr-0">
+                      <Link to={`/#`} className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-1">EN</Link>
                     </li>
                     <li className="mr-3">
-                      <Link to={`/#`} className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-4">About Us</Link>
+                      <Link to={`/#`} className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-1 font-bold">ID</Link>
                     </li>
                     <li className="py-3">
                     <Link to={`/#`} id="navAction" className="mx-auto lg:mx-0 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 gradient text-white">Berkarir di Ayoloka</Link>  
@@ -81,7 +84,7 @@ function Layout({ children }) {
                   {/* <p className="uppercase tracking-loose w-full"></p> */}
                   <h1 className="md:antialiased my-4 text-4xl font-bold leading-tight">Buat Event Gratis</h1>
                   <p className="leading-normal text-2xl mb-8">
-                    {data.site.siteMetadata.title} - adalah startup yang menyediakan marketplace digital untuk workshop,kursus dan seminar. Platform ini menghubungkan instructors dan students.                     
+                    {data.site.siteMetadata.title} - adalah startup yang menyediakan marketplace digital untuk workshop, kursus, dan seminar. Platform ini menghubungkan instructors dan students.                     
                   </p>
 
                   <form className="w-full"name="subscribe" method="post" data-netlify="true">
@@ -126,27 +129,27 @@ function Layout({ children }) {
               
                 <div className="flex flex-wrap">
                   <div className="w-5/6 sm:w-1/2 p-6">
-                    <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Cari Workshop Dalam Sekejap</h3>
-                    <p className="text-gray-600 mb-8">Temukan workshops dengan mencari berdasarkan keyword atau memakai filter berdasar lokasi, kategori, instruktur, dan lain-lain.<br/><br/></p>
+                    <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">Cari Workshop Dalam Sekejap</h3>
+                    <p className="text-gray-600 mb-8" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">Temukan workshops dengan mencari berdasarkan keyword atau memakai filter berdasar lokasi, kategori, instruktur, dan lain-lain.<br/><br/></p>
                     
                     
                   </div>
-                  <div className="w-full sm:w-1/2 p-6">
-                    <img src={website_prog1}/>
+                  <div className="w-full sm:w-1/2 p-6" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false" >
+                    <img src={website_prog1} />
 
                   </div>
                 </div>
                 
                 
-                <div className="flex flex-wrap flex-col-reverse sm:flex-row">	
-                  <div className="w-full sm:w-1/2 p-6 mt-6">
+                <div className="flex flex-wrap flex-col-reverse sm:flex-row" >	
+                  <div className="w-full sm:w-1/2 p-6 mt-6" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
                     <img src={website_prog2}/>
                   </div>
 
                   <div className="w-full sm:w-1/2 p-6 mt-6">
                     <div className="align-middle">
-                      <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Baca Detailnya</h3>
-                        <p className="text-gray-600 mb-8">Hubungi instruktur, pilih tanggal, beli dari beberapa pilihan tiket, dan sebagainya.Tidak perlu menunggu lama untuk mencari tahu kelas penuh atau tidak.<br /><br/>
+                      <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">Baca Detailnya</h3>
+                        <p className="text-gray-600 mb-8" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">Hubungi instruktur, pilih tanggal, beli dari beberapa pilihan tiket, dan sebagainya.Tidak perlu menunggu lama untuk mencari tahu kelas penuh atau tidak.<br /><br/>
                         </p>
                     </div>
                   </div>
@@ -154,26 +157,26 @@ function Layout({ children }) {
 
                 <div className="flex flex-wrap">
                   <div className="w-5/6 sm:w-1/2 p-6">
-                    <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Bayar Online</h3>
-                    <p className="text-gray-600 mb-8">Pilih metode pembayaran secara online dan dapatkan poin untuk pembelian selanjutnya.Kami menerima Go Pay, Credit Card, Bank Transfer, dll<br/><br/></p>
+                    <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">Bayar Online</h3>
+                    <p className="text-gray-600 mb-8" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">Pilih metode pembayaran secara online dan dapatkan poin untuk pembelian selanjutnya.Kami menerima Go Pay, Credit Card, Bank Transfer, dll<br/><br/></p>
                     
                     
                   </div>
-                  <div className="w-full sm:w-1/2 p-6">
+                  <div className="w-full sm:w-1/2 p-6" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">
                     <img src={website_prog5}/>
 
                   </div>
                 </div>
 
                 <div className="flex flex-wrap flex-col-reverse sm:flex-row">	
-                  <div className="w-full sm:w-1/2 p-6 mt-6">
+                  <div className="w-full sm:w-1/2 p-6 mt-6" data-aos="fade-right" data-aos-duration="1000" data-aos-once="false">
                     <img src={website_prog3}/>
                   </div>
 
                   <div className="w-full sm:w-1/2 p-6 mt-6">
                     <div className="align-middle">
-                      <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Kasih Masukan</h3>
-                        <p className="text-gray-600 mb-8">Beri masukan kepada instruktur secara pribadi, dan berikan rating/review untuk siswa lain dan berikan rating untuk membantu siswa lain dalam mengambil keputusan. <br/><br/>
+                      <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">Kasih Masukan</h3>
+                        <p className="text-gray-600 mb-8" data-aos="fade-left" data-aos-duration="1000" data-aos-once="false">Beri masukan kepada instruktur secara pribadi, dan berikan rating/review untuk siswa lain dan berikan rating untuk membantu siswa lain dalam mengambil keputusan. <br/><br/>
                         </p>
                     </div>
                   </div>
