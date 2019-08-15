@@ -1,8 +1,8 @@
 module.exports = {
   siteMetadata: {
-    title: `Ayoloka`,
+    title: `Ayoloka - Buat Event Gratis , Beli Tiket Workshop & Cari Jadwal Event`,
     siteUrl: `https://www.ayoloka.com`,
-    description: `Ayoloka - Jagonya Bikin Event`,
+    description: `Buat event lebih mudah di Ayoloka , ayo cari atau buat workshop , jadwalkan , beli dan jual tiketmu sekarang di Ayoloka.com. `,
     author: `@ayoloka.com`,    
     blog: `https://blog.ayoloka.com`,
     docs: `https://docs.ayoloka.com`,

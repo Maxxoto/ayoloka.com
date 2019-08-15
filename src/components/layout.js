@@ -45,7 +45,7 @@ function Layout({ children }) {
                   
                 <div className="pl-4 flex items-center">
                   <Link to={`/#`} className="toggleColour no-underline hover:no-underline font-bold text-2xl lg:text-4xl text-gray-800"> 
-                    <img className="ayolokahead" alt="img_ayolokahead" src={ayolokahead}/>
+                    <img className="ayolokahead" alt="" src={ayolokahead}/>
                   </Link>
                 </div>
 
@@ -116,7 +116,7 @@ function Layout({ children }) {
                 </div>
 
                 <div className="w-full md:w-3/5 py-6 text-center">
-                  <img className="w-full md:w-4/5 z-50" alt="img-hero" src={heroImg} />
+                  <img className="w-full md:w-4/5 z-50" alt="" src={heroImg} />
                 </div>
                 
               </div>
@@ -157,7 +157,7 @@ function Layout({ children }) {
 
                   <div className="w-full sm:w-1/2 p-6">
                     <Fade right> 
-                    <img src={website_prog1} />
+                    <img alt="" src={website_prog1} />
                     </Fade>
                   </div>
                   
@@ -169,7 +169,7 @@ function Layout({ children }) {
                   
                   <div className="w-full sm:w-1/2 p-6 mt-6">
                     <Fade left>
-                    <img src={website_prog2}/>
+                    <img alt="" src={website_prog2}/>
                     </Fade>
                   </div>
                   
@@ -193,7 +193,7 @@ function Layout({ children }) {
                   </div>
                   <div className="w-full sm:w-1/2 p-6">
                     <Fade right>
-                    <img src={website_prog5}/>
+                    <img alt="" src={website_prog5}/>
                     </Fade>
                   </div>
                 </div>
@@ -201,7 +201,7 @@ function Layout({ children }) {
                 <div className="flex content-center items-center flex-wrap flex-col-reverse sm:flex-row">	
                   <div className="w-full sm:w-1/2 p-6 mt-6">
                     <Fade left>
-                    <img src={website_prog3}/>
+                    <img alt="" src={website_prog3}/>
                     </Fade>
                   </div>
 
@@ -251,7 +251,7 @@ function Layout({ children }) {
 
                   <div className="mb-6 flex justify-center ">
                     <a href={`/#`}> 
-                      <img className="ayolokahead" alt="img-ayolokahead" src={ayolokahead}/>
+                      <img className="ayolokahead" alt="" src={ayolokahead}/>
                     </a>
                   </div>
                         
