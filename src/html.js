@@ -1,5 +1,7 @@
 import React from "react"
 import PropTypes from "prop-types"
+// import AOS from 'aos';
+
 
 export default function HTML(props) {
   return (
@@ -21,7 +23,9 @@ export default function HTML(props) {
         <div
           key={`body`}
           id="___gatsby"
-          dangerouslySetInnerHTML={{ __html: props.body }}
+          dangerouslySetInnerHTML={{ __html: 
+            props.body 
+          }}
         />
         {props.postBodyComponents}
       </body>
