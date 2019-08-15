@@ -71,9 +71,8 @@ Use `npm run build` to build your site for production.
 
 ## Support
 
-For issues and features request, use **Github** or access the [support page](https://appseed.us/support) provided by **AppSeed** 
+For issues and features request, use **Github** or access the [support page](https://ayoloka.com) provided by **Ayoloka** 
 
-<br />
+<br/>
 
 ---
-[GatsbyJS Tailwind Starter](https://gatsbyjs-starter-tailwindplay.appseed.us/) provided by **AppSeed**
