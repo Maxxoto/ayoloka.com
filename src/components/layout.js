@@ -95,7 +95,7 @@ function Layout({ children }) {
                     <button type="submit" className="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Cari Tahu</button>
                   </form>                   */}
 
-                  <form className="w-full" action="/" name="Subscribe Form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
+                  <form className="w-full" name="Subscribe Form" method="post" data-netlify="true" data-netlify-honeypot="bot-field">
                     {/* The `form-name` hidden field is required to support form submissions without JavaScript */}
                     <input type="hidden" name="form-name" value="contact" />
                     <div hidden>
