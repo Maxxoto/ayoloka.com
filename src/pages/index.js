@@ -17,7 +17,7 @@ function IndexPage() {
       </Helmet>
       
       <SEO
-        // title=""
+        title="Ayoloka - Buat Event Gratis , Beli Tiket Workshop & Cari Jadwal Event"
         keywords={[`event surabaya`, `event platform`, `loket.com`, `ayoloka`,`eventbrite`,`buat event gratis`]}
       />
     
