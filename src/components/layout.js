@@ -89,7 +89,7 @@ function Layout({ children }) {
                     {data.site.siteMetadata.title} - adalah startup yang menyediakan marketplace digital untuk workshop, kursus, dan seminar. Platform ini menghubungkan instructors dan students.                     
                   </p>
 
-                  <form className="w-full" name="subscribe" method="post" data-netlify="true" data-netlify-recaptcha="true">
+                  <form className="w-full" name="Subscribe Form" method="post" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field">
                     <input type="email" name="email" className="sm:w-auto lg:w-8/12 bg-white placeholder-gray-500 text-black rounded-full focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg lg:mx-0 py-4 px-8 mr-1 appearance-none leading-normal" placeholder="Masukkan email"/> 
                     &nbsp;
                     <button type="submit" className="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg">Cari Tahu</button>
