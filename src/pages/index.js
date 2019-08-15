@@ -13,10 +13,11 @@ function IndexPage() {
     <Layout>
       <Helmet>
         <link href="https://fonts.googleapis.com/css?family=Muli&display=swap" rel="stylesheet"/>
+        <meta name="google-site-verification" content="LubiZqT6WuKIIIoUYZBCP1pXGc32ybAMAkFnOduyJBw" />
       </Helmet>
       
       <SEO
-        title="Ayoloka - Jagoan Eventmu"
+        title="Ayoloka - Buat Event Gratis , Beli Tiket Workshop & Cari Jadwal Event"
         keywords={[`event surabaya`, `event platform`, `loket.com`, `ayoloka`,`eventbrite`,`buat event gratis`]}
       />
     
