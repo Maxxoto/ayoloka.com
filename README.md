@@ -4,10 +4,6 @@ Tailwind CSS - a simple landing page styled with [Tailwind CSS](https://tailwind
 
 <br >
 
-<div align="center">
-  <img src="https://raw.githubusercontent.com/app-generator/static/master/gatsbyjs-starter-tailwindplay/gatsbyjs-starter-tailwindplay-intro.gif" alt="Gatsby and Tailwind CSS logos">
-</div>
-
 <br />
 
 ## What is Tailwind?
