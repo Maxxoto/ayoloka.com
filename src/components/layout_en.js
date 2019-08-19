@@ -62,10 +62,10 @@ function LayoutEn({ children }) {
                       <Link to={`/`} className="inline-block py-2 px-4 text-black font-bold no-underline" >Home</Link>
                     </li>
                     <li className="mr-0">
-                      <Link to={`/en/`} className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-1">EN</Link>
+                      <Link to={`/en/`} className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-1 font-bold">EN</Link>
                     </li>
                     <li className="mr-3">
-                      <Link to={`/`} className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-1 font-bold">ID</Link>
+                      <Link to={`/`} className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-1 ">ID</Link>
                     </li>
                     <li className="py-3">
                     <Link to={`/careers`} id="navAction" className="mx-auto lg:mx-0 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 gradient text-white">Careers @ Ayoloka</Link>  
