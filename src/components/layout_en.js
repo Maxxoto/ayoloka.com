@@ -18,12 +18,12 @@ import website_prog4 from "../images/website 4_prog.jpg";
 import website_prog5 from "../images/website 5_prog.jpg";
 
 
-function Layout({ children }) {
+function LayoutEn({ children }) {
   const [isExpanded, toggleExpansion] = useState(false);
   return (
     <StaticQuery
       query={graphql`
-        query SiteTitleQuery {
+        {
           site {
             siteMetadata {
               title,
@@ -68,7 +68,7 @@ function Layout({ children }) {
                       <Link to={`/`} className="inline-block text-black no-underline hover:text-gray-800 hover:text-underline py-2 px-1 font-bold">ID</Link>
                     </li>
                     <li className="py-3">
-                    <Link to={`/careers`} id="navAction" className="mx-auto lg:mx-0 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 gradient text-white">Berkarir di Ayoloka</Link>  
+                    <Link to={`/careers`} id="navAction" className="mx-auto lg:mx-0 font-bold rounded-full mt-4 lg:mt-0 py-4 px-8 shadow opacity-75 gradient text-white">Careers @ Ayoloka</Link>  
                     </li>
                   </ul>
                 </div>
@@ -84,9 +84,9 @@ function Layout({ children }) {
 
                 <div className="flex flex-col w-full md:w-2/5 justify-center lg:items-start sm:items-center text-center md:text-left">
                   {/* <p className="uppercase tracking-loose w-full"></p> */}
-                  <h1 className="md:antialiased my-4 text-4xl font-bold leading-tight">Buat Event Keren</h1>
+                  <h1 className="md:antialiased my-4 text-4xl font-bold leading-tight">Make a Great Event</h1>
                   <p className="leading-normal text-2xl mb-8">
-                    {data.site.siteMetadata.title} - adalah startup yang menyediakan marketplace digital untuk workshop, kursus, dan seminar. Platform ini menghubungkan instructors dan students.                     
+                    Coming soon, {data.site.siteMetadata.title} is a digital marketplace for workshops.This platform helps to connect instructors and students all over Indonesia.
                   </p>
 
                   {/* <form className="w-full" name="Subscribe Form" method="post" data-netlify="true" data-netlify-recaptcha="true" netlify-honeypot="bot-field" onSubmit={this.handleSubmit}>
@@ -105,10 +105,10 @@ function Layout({ children }) {
                       </label>
                     </div> 
 
-                      <input className="sm:w-auto lg:w-8/12 bg-white placeholder-gray-500 text-black rounded-full focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg lg:mx-0 py-4 px-8 mr-1 appearance-none leading-normal" type={'email'} name={'email'} id={'email'} required={true} placeholder="Masukkan email" />
+                      <input className="sm:w-auto lg:w-7/12 bg-white placeholder-gray-500 text-black rounded-full focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg lg:mx-0 py-4 px-8 mr-1 appearance-none leading-normal" type={'email'} name={'email'} id={'email'} required={true} placeholder="Masukkan email" />
                       &nbsp;
                       <button type="submit" className="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg" >
-                        Cari Tahu
+                        Find Out More
                       </button>
                     
                   </form>
@@ -150,8 +150,8 @@ function Layout({ children }) {
                 <div className="flex content-center items-center flex-wrap">
                   <div className="w-full sm:w-1/2 p-6 ">
                     <Fade left>
-                    <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Cari Workshop Dalam Sekejap</h3>
-                    <p className="text-gray-600 mb-8">Temukan workshops dengan mencari berdasarkan keyword atau memakai filter berdasar lokasi, kategori, instruktur, dan lain-lain.<br/><br/></p>
+                    <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3">Find Workshops in Minutes</h3>
+                    <p className="text-gray-600 mb-8">Discover workshops with our powerful search based on keyword.Filter based on location, category, instructors, price, and others.<br/><br/></p>
                     </Fade>  
                   </div>
 
@@ -176,8 +176,8 @@ function Layout({ children }) {
                   <div className="w-full sm:w-1/2 p-6 mt-6">
                     <div className="align-middle">
                       <Fade right>
-                      <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3" >Baca Detailnya</h3>
-                        <p className="text-gray-600 mb-8">Hubungi instruktur, pilih tanggal, beli dari beberapa pilihan tiket, dan sebagainya.Tidak perlu menunggu lama untuk mencari tahu kelas penuh atau tidak.<br/><br/></p>
+                      <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3" >Read the Details</h3>
+                        <p className="text-gray-600 mb-8">Contact the instructors, choose the date, buy different types of tickets, and many more.Now you can find out instantly whether there is still empty slot or not.<br/><br/></p>
                       </Fade>
                     </div>
                   </div>
@@ -186,8 +186,8 @@ function Layout({ children }) {
                 <div className="flex content-center items-center flex-wrap">
                   <div className="w-full sm:w-1/2 p-6">
                     <Fade left>
-                    <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3" >Bayar Online</h3>
-                    <p className="text-gray-600 mb-8" >Pilih metode pembayaran secara online dan dapatkan poin untuk pembelian selanjutnya.Kami menerima Go Pay, Credit Card, Bank Transfer, dll<br/><br/></p>
+                    <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3" >Pay Online</h3>
+                    <p className="text-gray-600 mb-8" >Choose from variety of payment methods and earn points for subsequent workshops that you plan to attend.We accept Go Pay, credit card, bank transfer, etc.<br/><br/></p>
                     </Fade>
                     
                   </div>
@@ -208,8 +208,8 @@ function Layout({ children }) {
                   <div className="w-full sm:w-1/2 p-6 mt-6">
                     <div className="align-middle">
                       <Fade right>
-                      <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3" >Kasih Masukan</h3>
-                        <p className="text-gray-600 mb-8">Beri masukan kepada instruktur secara pribadi, dan berikan rating/review untuk siswa lain dan berikan rating untuk membantu siswa lain dalam mengambil keputusan. <br/><br/></p>                        
+                      <h3 className="text-3xl text-gray-800 font-bold leading-none mb-3" >Give Feedback</h3>
+                        <p className="text-gray-600 mb-8">Give feedback/review to the instructors publicly or privately and give rating to help other students to make decision.<br/><br/></p>                        
                       </Fade>
                     </div>
                   </div>
@@ -309,8 +309,8 @@ function Layout({ children }) {
     />
   );
 }
-Layout.propTypes = {
+LayoutEn.propTypes = {
   children: PropTypes.node.isRequired
 };
 
-export default Layout;
+export default LayoutEn;
