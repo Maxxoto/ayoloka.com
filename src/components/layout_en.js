@@ -105,7 +105,7 @@ function LayoutEn({ children }) {
                       </label>
                     </div> 
 
-                      <input className="sm:w-auto lg:w-7/12 bg-white placeholder-gray-500 text-black rounded-full focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg lg:mx-0 py-4 px-8 mr-1 appearance-none leading-normal" type={'email'} name={'email'} id={'email'} required={true} placeholder="Masukkan email" />
+                      <input className="sm:w-auto lg:w-7/12 bg-white placeholder-gray-500 text-black rounded-full focus:outline-none focus:shadow-outline border border-gray-300 rounded-lg lg:mx-0 py-4 px-8 mr-1 appearance-none leading-normal" type={'email'} name={'email'} id={'email'} required={true} placeholder="Your email address" />
                       &nbsp;
                       <button type="submit" className="mx-auto lg:mx-0 bg-white text-gray-800 font-bold rounded-full my-6 py-4 px-8 shadow-lg" >
                         Find Out More
